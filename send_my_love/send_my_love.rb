@@ -1,5 +1,6 @@
 # Send My Love by Adele, written by Adele Adkins, Max Martin, Shellback
 # Sonic Pi code by Michael R. Fleet (github.com/f1337)
+# Listen to the output on Soundcloud: https://soundcloud.com/michael-fleet-952044357/send-my-love
 # This code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 # To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
 
@@ -137,7 +138,7 @@ define :kick_rhythm do |drum|
 end
 
 define :melody do
-  # variables 
+  # variables
   d3_maj = chord(:D3, :major)
   
   send_my_love_to_your_new = d3_maj.take(2).stretch(3)
