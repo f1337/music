@@ -1,5 +1,6 @@
-# Send My Love by Adele, written by Adele Adkins, Max Martin, Shellback
-# SonicPi (sonic-pi.net) Code by Michael R. Fleet (github.com/f1337)
+# Send My Love
+# Written by Adele Adkins, Max Martin, Shellback
+# Code by Michael R. Fleet (github.com/f1337)
 # This code is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 # To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/.
 
