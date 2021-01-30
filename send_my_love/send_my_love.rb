@@ -10,30 +10,6 @@ use_bpm 81
 use_debug false
 
 ######################
-##| STRUCTURE
-######################
-
-intro
-2.times { verse }
-pre_chorus
-2.times { chorus }
-
-guitar(:guitar_arpeggio1) # short break after first chorus
-
-2.times { verse }
-pre_chorus # TODO: end w/ drums + guitar hard 1-2 beat stop, while vox continue
-2.times { chorus }
-
-coda # TODO: ending w/ we both know we aint kids no more
-bridge
-2.times { chorus }
-
-2.times do
-  in_thread { coda }
-  chorus
-end
-
-######################
 ##| PARTS
 ######################
 
@@ -311,4 +287,28 @@ define :verse_melody do
   play_pattern_timed [:E4, :Fs4, :E4, :D4, :B3], [0.25, 0.25, 0.25, 0.25, 0.75]
   sleep 0.25
   play_pattern_timed [:Fs4, :Fs4, :E4, :Fs4, :A4, :Fs4], [0.25, 0.25, 0.25, 0.25, 0.5, 0.5]
+end
+
+######################
+##| STRUCTURE
+######################
+
+intro
+2.times { verse }
+pre_chorus
+2.times { chorus }
+
+guitar(:guitar_arpeggio1) # short break after first chorus
+
+2.times { verse }
+pre_chorus # TODO: end w/ drums + guitar hard 1-2 beat stop, while vox continue
+2.times { chorus }
+
+coda # TODO: ending w/ we both know we aint kids no more
+bridge
+2.times { chorus }
+
+2.times do
+  in_thread { coda }
+  chorus
 end
